@@ -1,0 +1,307 @@
+/*
+Author: Clayton Tan
+Date: 11/10/2025
+File Name: styles.css
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img, ul {
+        margin: 0;
+        padding: 0;
+        border: 0;
+}
+
+body {
+        background-color: #acf2ed;
+}
+
+header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #acf2ed;
+        height: 190px;
+}
+
+header img {
+        margin: 0 auto;
+}
+
+.mobile-nav a {
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	right: 0;
+	top: 0;
+}
+
+.mobile {
+        display: block;
+}
+
+.tablet-desktop, #menu-links {
+        display: none;
+}
+
+img {
+        max-width: 100%;
+        display: block;
+}
+
+.round {
+        border-radius: 8px;
+}
+
+main {
+        clear:left; /* clears a float to the left */
+        background-color: #fff;
+        padding: 2%;
+        font-size: 1.25em;
+        font-family: "Bree Serif", serif;
+}
+
+.tel-link {
+        background-color: #404040;
+        padding: 2%;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+}
+
+.tel-link a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+        display: block;
+}
+
+#preventive_care, #restorative_general, #cosmetic_orthodontics, #kids {
+        border-top: 1px;
+        border-bottom: 1px;
+        text-align: left;
+
+}
+
+/*tablet*/
+@media screen and (min-width:630px) {
+        .tablet-desktop {
+                display: block;
+        }
+
+        .mobile, .mobile-nav, .mobile-nav a.menu-icon {
+                display: none;
+        }
+
+        main {
+                text-align: center;
+        }
+
+        main li {
+                list-style: none;
+        }
+
+        header {
+                position: static;
+                padding-bottom: 2%;
+        }
+
+        nav {
+                padding: 1%;
+                margin-bottom: 1%;
+        }
+
+        nav ul {
+
+                list-style-type: none;
+                text-align: center;
+        }
+
+
+
+        nav li {
+                border-top: none;
+                display: inline-block;
+                border-right: 1px solid #fff;
+                font-size: 1.5em;
+                font-family: "Francois One", sans-serif;
+                border-bottom: 1px solid #fff;
+        }
+
+        nav li:last-child {
+                border-right: none;
+        }
+
+        nav li a {
+                padding: 0.1em 0.75em;
+                display: block;
+                color: #000000;
+                text-decoration: none;
+        }
+
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+/*desktop*/
+@media screen and (min-width: 1015px) {
+        header {
+                width: 25%;
+                float: left;
+                padding-bottom: 0;
+        }
+
+        nav {
+                float: right;
+                width: 70%;
+                margin: 4em 1em 0 0;
+        }
+
+        nav ul {
+                text-align: right;
+        }
+
+        nav li {
+                border: none;
+        }
+
+        nab li a {
+                padding: 0.5em 1em;
+        }
+
+        main {
+                text-align: center;
+                
+        }
+
+        main li {
+                list-style: none;
+        }
+
+        main h1 {
+                font-size: 1.8em;
+        }
+
+        #facilities, #tools {
+        width: 49%;
+        float: left;
+        margin: 0.2%;
+        }
+
+        #digital_xray img {
+                float: left;
+                width: 33.33%;
+                padding: 6em;
+        }
+
+
+
+        #laser_dentistry, #teledentistry {
+                clear: left;
+                width: auto;
+                padding: 1% 2%;
+        }
+
+        #intraoral_cameras, #cad_cam_technology, #threed_printing {
+        width: 29%;
+        float: left;
+        margin: 0.2%;
+        }
+
+	form {
+		width: auto;
+	}
+
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		gap: 20px;
+	}
+
+	.btn {
+		grid-column: 1 / span 3;
+	}
+}
+
+
+
+#johanna, #emily, #benedict, #richard, #april {
+        text-align: left;
+}
+
+.sign_up_link {
+        font-size: 1.35em;
+        color: #666600;
+        font-weight: bold;
+        text-decoration: none;
+}
+
+#contact {
+        text-align: center;
+        
+}
+
+#contact a {
+        color: #666600;
+        text-decoration: none;
+}
+
+#opening_hours {
+        text-align: center;
+        padding: 3em;
+}
+
+#form {
+	margin-top: 2%;		background-color: #f2f2f2; padding: 2%;
+}
+
+#form h2 {
+	text-align: center;
+}
+
+/*Style rules for form elements*/
+fieldset, input, select, textarea {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+footer p {
+        font-size: 0.75em;
+        text-align: center;
+        color: #000000;
+        padding: 0 1em;
+}
+
+footer p a {
+        color: #000000; /* Sets the link colour */
+        text-decoration: none;
+}
